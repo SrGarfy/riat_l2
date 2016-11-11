@@ -11,7 +11,7 @@ using System.Xml.Serialization;
 
 namespace riat_l2
 {
-    class XmlSerializerMy : Serializer
+    class XmlSerializerMy
     {
         private static readonly XmlWriterSettings settings;
         private static readonly XmlSerializerNamespaces namespaces;

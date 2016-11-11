@@ -13,7 +13,7 @@ namespace riat_l2
         public decimal[] Sums {get; set;}
         public int[] Muls {get; set;}
 
-        public Output createOutput()
+        public Output CreateOutput()
         {
             return new Output
             {

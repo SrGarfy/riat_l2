@@ -7,14 +7,14 @@ using Newtonsoft.Json;
 
 namespace riat_l2
 {
-    class JsonSerializer : Serializer
+    class JsonSerializer
     {
-        public byte[] Serialize<T>(T obj)
+        public static byte[] Serialize<T>(T obj)
         {
             return Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(obj));
         }
 
-        public T Deserialize<T>(byte[] data)
+        public static T Deserialize<T>(byte[] data)
         {
             return JsonConvert.DeserializeObject<T>(Encoding.UTF8.GetString(data));
         }

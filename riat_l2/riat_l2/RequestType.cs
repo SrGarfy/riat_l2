@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace riat_l2
 {
-    public interface Serializer
+    public enum RequestType
     {
-        byte[] Serialize<T>(T obj);
-        T Deserialize<T>(byte[] data);
+        GET,
+        POST
     }
 }
